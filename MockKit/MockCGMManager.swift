@@ -110,7 +110,7 @@ public final class MockCGMManager: TestingCGMManager {
 
     public let managedDataInterval: TimeInterval? = nil
 
-    public let shouldSyncToRemoteService = false
+    public var shouldSyncToRemoteService = false
 
     public func fetchNewDataIfNeeded(_ completion: @escaping (CGMResult) -> Void) {
         dataSource.fetchNewData(completion)
