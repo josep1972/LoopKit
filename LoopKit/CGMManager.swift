@@ -57,7 +57,7 @@ public protocol CGMManager: DeviceManager {
     /// The length of time to keep samples in HealthKit before removal. Return nil to never remove samples.
     var managedDataInterval: TimeInterval? { get }
 
-    var shouldSyncToRemoteService: Bool { get }
+    var shouldSyncToRemoteService: Bool { get set }
 
     var sensorState: SensorDisplayable? { get }
 
